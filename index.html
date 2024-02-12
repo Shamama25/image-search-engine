@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Image Search Engine</h1>
-    <form id="search-form">
-        <input type="text" id="search-box" placeholder="Search anything here........">    
-        <button type="button">Search</button>
+    <form id="search-form" action="https://api.unsplash.com/search/photos" method="GET">
+        <input type="text" id="search-box" name="query" placeholder="Search anything here........">    
+        <button type="submit">Search</button>
     </form>
     
     <div class="search-result"></div>
